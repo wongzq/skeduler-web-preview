@@ -10479,3 +10479,8 @@ header.masthead h1 {
 .vjs-default-skin .vjs-volume-control {
   display: none;
 }
+
+.brand-text-container {
+  display: flex;
+  align-items: flex-end;
+}
