@@ -10271,6 +10271,11 @@ header.masthead h1 {
   border-radius: 0.5rem;
 }
 
+.col-sm-3.preview-box-container,
+.col-sm-3.preview-box-container * {
+  max-height: 70vh !important;
+}
+
 .preview-box-container * {
   border-radius: 0.5rem;
 }
@@ -10292,7 +10297,7 @@ header.masthead h1 {
   display: flex;
   justify-content: center;
   width: auto;
-  background: #fff;
+  background: #000;
 }
 
 .preview-box .preview-vid,
@@ -10471,4 +10476,6 @@ header.masthead h1 {
   margin-right: 1rem;
 }
 
-.vjs-default-skin .vjs-volume-control { display: none; }
+.vjs-default-skin .vjs-volume-control {
+  display: none;
+}
