@@ -10301,6 +10301,7 @@ header.masthead h1 {
 .preview-box .preview-vid:hover {
   width: 100%;
   outline: none;
+  border-radius: 0.5rem;
 }
 
 .container-fluid .preview-box .preview-box-caption,
@@ -10469,3 +10470,5 @@ header.masthead h1 {
   max-width: 2rem;
   margin-right: 1rem;
 }
+
+.vjs-default-skin .vjs-volume-control { display: none; }
