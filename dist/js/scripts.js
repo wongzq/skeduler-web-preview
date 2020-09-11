@@ -1,9 +1,9 @@
 /*!
-    * Start Bootstrap - Creative v6.0.3 (https://startbootstrap.com/themes/creative)
-    * Copyright 2013-2020 Start Bootstrap
-    * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-creative/blob/master/LICENSE)
-    */
-    (function($) {
+ * Start Bootstrap - Creative v6.0.3 (https://startbootstrap.com/themes/creative)
+ * Copyright 2013-2020 Start Bootstrap
+ * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-creative/blob/master/LICENSE)
+ */
+(function($) {
   "use strict"; // Start of use strict
 
   // Smooth scrolling using jQuery easing
@@ -44,20 +44,11 @@
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
 
-  // Magnific popup calls
-  $('#portfolio').magnificPopup({
-    delegate: 'a',
-    type: 'image',
-    tLoading: 'Loading image #%curr%...',
-    mainClass: 'mfp-img-mobile',
-    gallery: {
-      enabled: true,
-      navigateByImgClick: true,
-      preload: [0, 1]
-    },
-    image: {
-      tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
-    }
-  });
-
+  // auto play video on hover
+  $('.preview-vid').mouseover(function() {
+    $(this).get(0).play();
+  }).mouseout(function() {
+    $(this).get(0).pause();
+    $(this).get(0).currentTime = 0;
+  })
 })(jQuery); // End of use strict
