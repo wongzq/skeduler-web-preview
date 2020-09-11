@@ -58,6 +58,6 @@
   //     $(this).get(0).currentTime = 0;
   //   });
   //   $(this).get(0).play();
-  })
+  // })
 
 })(jQuery); // End of use strict
