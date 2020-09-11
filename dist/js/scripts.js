@@ -45,10 +45,19 @@
   $(window).scroll(navbarCollapse);
 
   // auto play video on hover
-  $('.preview-vid').mouseover(function() {
+  $('.preview-vid').on("mouseover", function() {
     $(this).get(0).play();
-  }).mouseout(function() {
+  }).on("mouseout", function() {
     $(this).get(0).pause();
     $(this).get(0).currentTime = 0;
+  });
+
+  // $('.preview-vid').on("onplay", function() {
+  //   $('.preview-vid').each(function() {
+  //     $(this).get(0).pause();
+  //     $(this).get(0).currentTime = 0;
+  //   });
+  //   $(this).get(0).play();
   })
+
 })(jQuery); // End of use strict
